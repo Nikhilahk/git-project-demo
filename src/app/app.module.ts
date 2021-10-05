@@ -7,7 +7,7 @@ import { AboutComponent } from './about/about.component';
 import { FaqComponent } from './faq/faq.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './register/register.component';
+
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -26,7 +26,6 @@ import { CartComponent } from './cart/cart.component';
     FaqComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent,
     PageNotFoundComponent,
     ItemsComponent,
     ItemDetailComponent,

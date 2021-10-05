@@ -6,8 +6,8 @@
     <thead>
         <tr>
             <th>Id</th>
-            <th>Name</th>
-            <th>Price</th>
+            <th>NAME</th>
+            <th>PRICE</th>
         </tr>
     </thead>
     <tbody>
@@ -17,8 +17,8 @@
             <td>{{ item.price}}</td>
             <td>
 
-                <li><a [routerLink]='["/item-detail/"+item.id]' class="btn btn-secondary">View Details</a>
-                    <a *ngIf=" !checkLoginStatus()" class="btn btn-success" (click)="addToCart(item)">Add to Cart</a>
+                <li><a [routerLink]='["/item-detail/"+item.id]' class="btn btn-secondary">VIEW DETAILS</a>
+                    <a *ngIf=" !checkLoginStatus()" class="btn btn-success" (click)="addToCart(item)">ADD TO CART</a>
                 </li>
 
 

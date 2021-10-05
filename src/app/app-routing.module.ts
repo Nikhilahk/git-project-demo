@@ -12,7 +12,6 @@ import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PasswordResetComponent } from './password-reset/password-reset.component';
 import { PaymentComponent } from './payment/payment.component';
-import { RegisterComponent } from './register/register.component';
 import { AuthService } from './services/auth.service';
 
 const routes: Routes = [
@@ -22,7 +21,6 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'register', component: RegisterComponent },
   { path: 'item-detail/:id', component: ItemDetailComponent },
   { path: 'item-update/:id', component: ItemUpdateComponent },
   { path: 'item-add', component: ItemAddComponent },

@@ -6,38 +6,38 @@
         <table class="table">
             <tbody>
                 <tr>
-                    <th>Item Id</th>
+                    <th>ITEM ID</th>
                     <td>{{ item.id }}</td>
                 </tr>
                 <tr>
-                    <th>Item Name</th>
+                    <th>ITEM NAME</th>
                     <td>{{item.name }}</td>
                 </tr>
 
                 <tr>
-                    <th>Item delivery</th>
+                    <th>ITEM DELIVERY</th>
                     <td>{{ item.delivery}}</td>
                 </tr>
                 <tr>
-                    <th>Item location</th>
+                    <th>ITEM LOCATION</th>
                     <td>{{ item.location }}</td>
                 </tr>
                 <tr>
-                    <th>Item rating</th>
+                    <th>ITEM RATING</th>
                     <td>{{item.ratings}}</td>
                 </tr>
                 <tr>
-                    <th>Item Price</th>
+                    <th>ITEM PRICE</th>
                     <td>{{item.price}}</td>
                 </tr>
             </tbody>
         </table>
     </div>
     <div class="card-footer">
-        <a routerLink='/items' class="btn btn-secondary">Go Back</a>
-        <a (click)="addToCart(item)" class="btn btn-success" *ngIf="!checkLoginStatus()">Add To Cart</a>
-        <button (click)="deleteItem()" class="btn btn-danger" *ngIf="checkLoginStatus()">Delete</button>
-        <a [routerLink]="['/item-update/', item.id]" class="btn btn-primary" *ngIf="checkLoginStatus()">Update</a>
+        <a routerLink='/items' class="btn btn-secondary">GO BACK</a>
+        <a (click)="addToCart(item)" class="btn btn-success" *ngIf="!checkLoginStatus()">ADD TO CART</a>
+        <button (click)="deleteItem()" class="btn btn-danger" *ngIf="checkLoginStatus()">DELETE</button>
+        <a [routerLink]="['/item-update/', item.id]" class="btn btn-primary" *ngIf="checkLoginStatus()">UPDATE</a>
 
 
     </div>

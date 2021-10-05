@@ -6,7 +6,7 @@
 
 
 
-<body style="background-color: bisque;">
+<body style="background-color:pink;">
 
 
     <div topnav>
@@ -20,14 +20,14 @@
             <div class="collapse navbar-collapse" id="navbarColor02">
                 <ul class="navbar-nav mr-auto">
 
-                    <li class="nav-item active"> <a class="nav-link" routerLink="home" data-abc="true">Home <span
+                    <li class="nav-item active"> <a class="nav-link" routerLink="home" data-abc="true">HOME <span
                                 class="sr-only"></span></a> </li>
-                    <li class="nav-item"> <a class="nav-link" routerLink="faq" data-abc="true">contact</a> </li>
-                    <li class="nav-item"> <a class="nav-link" routerLink="about" data-abc="true">About</a> </li>
+                    <li class="nav-item"> <a class="nav-link" routerLink="faq" data-abc="true">CONTACT</a> </li>
+                    <li class="nav-item"> <a class="nav-link" routerLink="about" data-abc="true">ABOUT</a> </li>
                     <li class="nav-item"> <a class="nav-link" routerLink="items" data-abc="true"
-                            *ngIf="!checkLoginStatus()">Available items</a> </li>
+                            *ngIf="!checkLoginStatus()">ITEMS AVAILABLE</a> </li>
                     <li class="nav-item"> <a class="nav-link" routerLink="items" data-abc="true"
-                            *ngIf="checkLoginStatus()">items</a> </li>
+                            *ngIf="checkLoginStatus()">ITEMS</a> </li>
 
                     <div>
                         <input list="browsers" name="browser" id="search" class="form-control mr-sm-2 topnav-right"
@@ -40,7 +40,7 @@
                     </div>
 
                     <div class="topnav-right">
-                        <li class="nav-item"><a class="btn btn-outline-primary" (click)="navigate()">Search</a></li>
+                        <li class="nav-item"><a class="btn btn-outline-primary" (click)="navigate()">SEARCH</a></li>
                     </div>
 
 
@@ -54,7 +54,7 @@
                         <li class="nav-item "> <a class="btn btn-outline-success" routerLink="login"
                                 *ngIf="!checkLoginStatus()" data-abc="true">LogIn</a><a class="btn btn-outline-danger"
                                 routerLink="home" *ngIf="checkLoginStatus()" data-abc="true"
-                                (click)="logout()">LogOut</a> </li>
+                                (click)="logout()">LOGOUT</a> </li>
 
                     </div>
                 </ul>

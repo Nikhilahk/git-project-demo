@@ -3,44 +3,45 @@
         <input type="text" class="form-control" name="username" id="floatingInput" [(ngModel)]="item.name"
             placeholder="Item name" #name="ngModel" required />
         <div *ngIf="name.errors?.required">
-            Name is required.
+            NAME
         </div>
-        <label for="floatingInput">Item Name</label>
+        <label for="floatingInput">ITEM NAME</label>
     </div>
     <div class="mb-3 form-floating">
         <input type="text" class="form-control" name="password" id="floatingPassword" #price="ngModel"
             [(ngModel)]="item.price" placeholder="Price" required />
         <div *ngIf="price.errors?.required">
-            Price is required.
+            PRICE
         </div>
-        <label for="floatingPassword">Price</label>
+        <label for="floatingPassword">PRICE</label>
     </div>
-
+    <div class="mb-3 form-floating">
     <input type="text" class="form-control" name="ratings" id="floatingInput" [(ngModel)]="item.ratings"
         placeholder="Item rating" #rating="ngModel" required />
     <div *ngIf="rating.errors?.required">
-        ratings is required.
+        RATING
     </div>
-    <label for="floatingInput">Ratings</label>
+    <label for="floatingInput">RATINGS</label>
+    </div>  
     <div class="mb-3 form-floating">
         <input type="text" class="form-control" name="delivery" id="floatingPassword" #delivery="ngModel"
             [(ngModel)]="item.delivery" placeholder="delivery" required />
         <div *ngIf="delivery.errors?.required">
-            Delivery is required.
+            DELIVERY
         </div>
-        <label for="floatingPassword">Delivery</label>
+        <label for="floatingPassword">DELIVERY</label>
     </div>
 
     <div class="mb-3 form-floating">
         <input type="text" class="form-control" name="delivery" id="floatingPassword" #location="ngModel"
             [(ngModel)]="item.location" placeholder="location" required />
         <div *ngIf="location.errors?.required">
-            Location is required.
+            LOCATION
         </div>
-        <label for="floatingPassword">Location</label>
+        <label for="floatingPassword">LOCATION</label>
     </div>
     <div>
-        <a class="btn btn-secondary" routerLink="/items">Go Back</a> |
-        <button type="submit" class="btn  btn-primary" (click)="UpdateItem()">Update</button>
+        <a class="btn btn-secondary" routerLink="/items">GO BACK</a> |
+        <button type="submit" class="btn  btn-primary" (click)="UpdateItem()">UPDATE</button>
     </div>
 </form>
